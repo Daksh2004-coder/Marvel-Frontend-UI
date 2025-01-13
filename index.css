@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@700&family=Metal+Mania&family=Rubik:wght@631&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body{
+    background-color: #000;
+
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+     list-style: none;
+}
+
+/* nav bar start */
+
+.section-navbar{
+    position: fixed;
+    
+}
+
+.container{
+    display: flex;
+    
+
+    & .gery-shade{
+        background-color: #212121;
+        border-radius: 10px;
+        padding-left: 20px;
+        width: 60vh;
+        height: 40vh;
+
+    }
+
+    & .navbar{
+        display: flex;
+        gap: 9.2rem;
+        padding-top: 20px;
+        position: fixed;
+        left: 24%;
+        transform: translateY(5%);
+
+         z-index: 2;
+
+        & a{
+            color: #ffffff;
+            font-size: larger;
+            font-weight: 900;
+
+
+        }
+
+        & a:hover{
+            color: red;
+        }
+    }
+
+    .marvel{
+        position: fixed;
+        transform: translateY(-12%);
+        left: 62%;
+        z-index: 1;
+
+    }
+}
+
+
+/* nav bar end */
+
+
+.section-main{
+    width: 128vh;
+    height: 70vh;
+    color: #ffffff;
+    background-color: #303030;
+    border-radius: 20px;
+    position: absolute;
+    left: 31.5%;
+    bottom: 13%;
+    /* border: solid 1px white; */
+    z-index: 3;
+    
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(25px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    border-radius: 20px;
+    border:2px solid rgba(255, 245, 245, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(74, 73, 73, 0.37);
+
+    display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(10rem, auto);      
+
+  & .black-panther{
+    
+ 
+    .label {
+        position: absolute;
+        background-color: #9411d08c; /* Semi-transparent background */
+        color: white;
+        padding: 15px 20px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .intelligence {
+        top: 18%; /* Adjust as needed */
+        left: -22%;
+        
+        z-index: 6;
+    }
+    
+    .ability {
+        bottom: 7%; /* Adjust as needed */
+        left: -26.8%;
+        z-index: 6;
+    }
+
+    .label:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        transition: 0.3s;
+    }
+
+    
+    .label::after {
+        content: ''; /* Empty content for the dot */
+        display: inline-block;
+        width: 8px; /* Size of the dot */
+        height: 8px;
+        background-color: white; /* Dot color */
+        border-radius: 50%; /* Makes it circular */
+        margin-left: 8px; /* Spacing between text and dot */
+    }
+    
+    
+   
+
+
+    
+    & img{
+        position: relative;
+    left: -31%;
+    top: 0.45rem;
+    /* bottom: 0.5rem; */
+    z-index: 5;
+    
+    }
+    & .circle{
+        width: 75vh;
+        aspect-ratio: 1;
+        background-color: #811ab1ac;
+        border-radius: 50%;
+        filter: blur(20px);
+        position: absolute;
+        top: -7%;
+        left: -35%;
+        z-index: 4;
+    }
+  }
+
+
+
+  & .content-heading{
+    position: relative;
+    /* right: 2rem; */
+    left: 14rem;
+    bottom: 9rem;
+    /* top: 0.5rem; */
+
+    & h1{
+    font-size: 5rem;
+    font-family: "Metal Mania", system-ui;
+}
+
+    & p{
+        position: relative;
+        left: 18rem;
+    }
+
+  }
+
+  & .content-details{
+    position: relative;
+    left: 18rem;
+    bottom: 11rem;
+    width: 20rem;
+    font-size: 0.9rem;
+    & h2{
+        font-weight: 900;
+    }
+  }
+  
+  & .content-detials--2{
+    position: relative;
+    left: 40rem;
+    bottom: 16rem;
+    width: 20rem;
+    font-size: 0.9rem;
+    & h2{
+        font-weight: 900;
+    }
+  }
+  
+  
+  & .content-detials--3{
+    position: relative;
+    left: 18rem;
+    bottom: 18rem;
+    width: 20rem;
+    font-size: 0.9rem;
+    & h2{
+        font-weight: 900;
+    }
+  }
+
+
+
+}
+
+
+
+.active-number{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+/* Scroll navigation container */
+.scroll-navigation {
+    position: fixed; 
+    left: 97.8%; 
+    bottom: 25%;
+    transform: translateY(-50%); /* Keeps the dots vertically centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust the spacing between the dots */
+    z-index: 1000; /* Ensures dots stay on top of other content */
+}
+
+/* Default dot style */
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative; /* Required for the ring effect */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Ring effect */
+.dot::after {
+    content: "";
+    position: absolute;
+    top: -7px; /* Centers the ring around the dot */
+    left: -7.5px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent ring */
+    border-radius: 50%;
+    opacity: 0; /* Ring is hidden by default */
+    transition: all 0.3s ease;
+}
+
+/* Active dot with visible ring */
+.dot.active::after {
+    opacity: 1;
+    transform: scale(1.2); /* Slightly enlarges the ring when active */
+    border-color: rgba(255, 255, 255, 0.8); /* Makes ring more visible when active */
+}
+
+/* Optional hover effect */
+.dot:hover::after {
+    opacity: 1;
+    transform: scale(1.1); /* Slightly enlarges ring on hover */
+}
+
+
+
+body1{
+    position: relative;
+    top: 38%;
+    left: 32%;
+
+
+
+
+& .circle-2{
+    width: 75vh;
+    aspect-ratio: 1;
+    background-color: #026f0dd7;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    top: -5%;
+    left: -34%;
+    z-index: 4;
+
+    
+}
+
+
+    & img{
+        position: relative;
+    left: -28%;
+    top: 0.45rem;
+    /* bottom: 0.5rem; */
+    z-index: 5;
+    
+    }
+
+    & .Doctor-Doom{
+    
+ 
+        .label {
+            position: absolute;
+            background-color: #0fe825; /* Semi-transparent background */
+            color: rgb(0, 0, 0);
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        
+        .intelligence {
+            top: 6%; /* Adjust as needed */
+            left: -16.2%;
+            
+            z-index: 6;
+        }
+        
+        .ability {
+            bottom: 21.5%; /* Adjust as needed */
+            left: -25%;
+            padding: 15px 32px;
+            z-index: 6;
+        }
+    
+        .label:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            transition: 0.3s;
+        }
+    
+        
+        .label::after {
+            content: ''; /* Empty content for the dot */
+            display: inline-block;
+            width: 8px; /* Size of the dot */
+            height: 8px;
+            background-color: white; /* Dot color */
+            border-radius: 50%; /* Makes it circular */
+            margin-left: 8px; /* Spacing between text and dot */
+        }
+        
+}
+
+
+}
